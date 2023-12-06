@@ -75,7 +75,7 @@ vector<double> CalcBatterStats(string& pname) { //Calculates wOBA, wRAA, & BABIP
     IBB = GetInfoNum("intentional walks",0);
 
     cout << "Enter number of total walks:" << endl;
-    uBB = GetInfoNum("total walks",0, IBB);
+    uBB = GetInfoNum("total walks",IBB);
     uBB = uBB - IBB;
 
     cout << "Enter number of hit by pitches:" << endl;
